@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="resume3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3da933d4-9d62-4134-bf7c-b59facc9a1df">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="183" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-6" width="250" height="31" uuid="39778b81-c875-40b2-ad43-e6938c04d27d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Aharoni" size="24"/>
+				</textElement>
+				<text><![CDATA[Aileen Kill]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="92" width="580" height="1" uuid="1ef6002c-d4fa-4f42-b455-417ae53d6e42"/>
+			</line>
+			<staticText>
+				<reportElement x="-10" y="93" width="170" height="30" uuid="53ffceef-9522-4e64-8ca1-b8ad3fce87c8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profile:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="29" width="311" height="59" uuid="98591835-9ca5-49e3-9b18-52eef226d62b"/>
+				<textElement>
+					<font fontName="Gisha" size="16"/>
+				</textElement>
+				<text><![CDATA[7245 Guider Dr. 218 Woodbury MN. 55125
+6127026631
+aileen.inocente@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-13" y="123" width="580" height="60" uuid="9fa6ec3b-d01c-43b5-b419-a318c6e42294"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[	I’m an IT professional skilled in front-end and back-end software development using Java and Spring. I have taken roles such as software engineer, tester, systems analyst and production support engineer for organization in retail and financial services.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-6" y="24" width="31" height="21" uuid="bb9bb910-6f3c-4f3f-a0cc-8dab680ebc60"/>
+				<imageExpression><![CDATA["./src/main/resources/static/image/address.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-4" y="46" width="19" height="29" uuid="7da505f5-8400-4ec7-9e44-9936fab2f8a3"/>
+				<imageExpression><![CDATA["./src/main/resources/static/image/phone.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-3" y="67" width="24" height="20" uuid="77fe90a2-4a19-43c9-a111-8567423f03e1"/>
+				<imageExpression><![CDATA["./src/main/resources/static/image/message.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="4" splitType="Stretch"/>
+		<band height="362">
+			<staticText>
+				<reportElement x="-13" y="32" width="578" height="323" uuid="f7c78f68-6940-4f7e-9cd4-d558889081c3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Software Languages:
+	• Programming Languages/Technology: Java, Visual Basic, IBM RPG, C++, Cobol 	Mainframe, JSP, ReactJS
+	• Scripting: Javascript, Jquery, Powershell, AngularJS
+	• Frameworks: Spring, Junit, Apache Struts, Apache Wicket, JSF, TestNG
+	• Document Syntax: JSON, XML, HTML
+Databases: DB2, Oracle, MS SQL Server, CouchDB, Toad, MongoDB
+Service Monitoring: Splunk, HP Business Service Management, HP Performance Manager
+Build and Release Tools: Jenkins, Hudson, Docker
+Code Repository: Subclipse, SVN, Mercurial, ClearCase, ClearQuest
+Other Tools:
+	IDE: Eclipse Ganymede, Eclipse Galileo, NetBeans , IBM Rational Software, STS
+	Collaborative Tools: Lync, HipChat, Slack, Confluence
+	Code Quality: FindBugs, CheckStyle, PMD, Sonar
+	Story/Bug Tracking: Version One, Rally
+	Application Servers: Tomcat, Websphere, JBoss, Jetty, Glassfish
+	Enterprise Content Management Platform: Documentum
+	Test Driven Development: JMeter, Selenium, JBehave, Soap UI PRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="7" width="181" height="33" uuid="971b370d-a77c-4519-9ac5-d08c3ef12085"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Technical Skills:]]></text>
+			</staticText>
+		</band>
+		<band height="244">
+			<staticText>
+				<reportElement x="14" y="93" width="548" height="147" uuid="ce30594c-248b-4d3c-a360-c18994fdf403"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• supervised and coached a team of 7 support analysts
+• managed tax calculation application with their upgrade integration project on time that resulted to elimination of compliance/support risk and avoiding extended support cost (25% increase)
+• led reconciliation app integration upgrade project in their infrastructure(client/server) and archive solution
+• handled the automation of the reconciliation app's health check/self heal report to use Robotic Process Automation utilizing Powershell, Docker, Service Now and Hipchat. ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-15" y="-1" width="580" height="1" uuid="740add47-5496-4e79-a082-5b826e19a9b5"/>
+			</line>
+			<staticText>
+				<reportElement x="-11" y="4" width="301" height="23" uuid="dae38c34-dbc6-4486-ad1c-a43466c90952"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Professional Experience:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-12" y="38" width="575" height="23" uuid="8efd357b-da86-43f7-9a6a-80c1b92ed753"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2014 – present: an American multinational consumer electronics retailer ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-6" y="70" width="246" height="23" uuid="bd739d4f-a78f-46fb-9953-6e454bc341f4"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[As L3 Production Support:]]></text>
+			</staticText>
+		</band>
+		<band height="101">
+			<staticText>
+				<reportElement x="14" y="-1" width="548" height="91" uuid="4d82c6fb-0fb0-4ae2-a58b-79f4ec7acaaf"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• attained a 70% reduction in service-impacting incidents from 2014 - present through the implementation of improved technology, processes and policies.
+• provided excellent application and monitoring support especially during Holidays using Splunk, HP BSM, and HP Performance Manager. 
+• recipient of the award "Operational Excellence"]]></text>
+			</staticText>
+		</band>
+		<band height="163">
+			<staticText>
+				<reportElement x="13" y="30" width="550" height="130" uuid="7465874b-cbf0-4d51-a282-02474dd619d0"/>
+				<textElement textAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• supervised an Agile team of 5 offsite developers
+• built web and mobile weekly/holiday UI pages using HTML5, CSS3, Javascript, Json, Ajax, JSP, NodeJS.
+• builds APIs and interfaces with quality and complying project’s coding standards and best practices. 
+• acted as a point of contact with external and internal client/teams to define business needs, fixing defects/issues and release deployments.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="1" width="246" height="29" uuid="ebd5f181-15c8-4461-8609-5c6a43f2c12d"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[As Development Lead:]]></text>
+			</staticText>
+		</band>
+		<band height="135">
+			<staticText>
+				<reportElement x="9" y="33" width="554" height="97" uuid="ed0f6b4c-af3a-4c39-8dbe-7d67eec6205c"/>
+				<textElement textAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• participated in the IPT test execution, UAT business Testing and test data preparation.
+• deliver test deliverables (test scenarios, test conditions & expected result and test cases) 
+• developed data test driven to fix 2.9 million impacted accounts by creating test suites in SOAP UI Pro.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="6" width="173" height="23" uuid="57bce5a4-0c43-4725-8d66-f35f0121b1b9"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[As Tester:]]></text>
+			</staticText>
+		</band>
+		<band height="372">
+			<staticText>
+				<reportElement x="9" y="40" width="555" height="180" uuid="247e5bde-d28f-4a25-afc7-48298c83586c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• improved and rolled out initiative to encapsulate the projects JUnit classes in a module level. 
+• pioneered the creation of ETL framework to migrate the current batch program to use Spring framework.
+• served as SME of Spring batch that includes fixing defects within SLA and providing time/work estimations. 
+• developed, tested, deployed back end services and sustained project deliverables
+• wrote stored procedures used in performance testing of the batch jobs migration scheduled in CRON. 
+• Recipient of the award "People Developer UBerStar for Q3 2013"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="13" width="575" height="23" uuid="4d36d5a1-f17f-47ed-822f-5cc703d3599c"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2013 – 2014: a global financial services company based in Zurich Switzerland]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-12" y="233" width="575" height="27" uuid="46a19d7b-6345-47c9-816a-06bf0997149e"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2011 – 2013: an American multinational consumer electronics retailer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="260" width="551" height="110" uuid="eac08e34-96f8-4fdd-8e0b-b99d1eded24a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• developed and restructured web services using Axis, Jax WS and Documentum with encryption and decryption using Jasypt.
+• transitioned knowledge transfer to a team in India. 
+• developed automation scripts using Java , Spring, JBehave, Selenium, JUnit, SVN.
+• developed simple/advanced search, batch job, webtop security modules using ECM Documentum/Webtop/Internal Scheduler.]]></text>
+			</staticText>
+		</band>
+		<band height="82">
+			<staticText>
+				<reportElement x="8" y="4" width="551" height="70" uuid="ea17a148-f018-400c-b6ef-417007356287"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• developed Captiva processes using InputAccel Captiva product. 
+• accomplished an out of the scope task (creating a DLL file using Visual Basic). 
+• designed, developed and consumed RESTful services, elastic search, batch components for web and mobile application in Agile]]></text>
+			</staticText>
+		</band>
+		<band/>
+		<band height="128">
+			<staticText>
+				<reportElement x="9" y="28" width="551" height="92" uuid="97f3b744-7bb2-4b20-b48b-976da3019733"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• built reporting software modules in a PDF format using Jasper
+• full stack developer for remittance online system application in SDLC methodology. 
+• published projects system requirements documents and delivered user manual/training documentation. 
+• handled project deployments and assisted UAT testing.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="4" width="575" height="27" uuid="bb1e2a04-b1d3-4fcc-bdb5-439129a72492"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2009 – 2010: a banking company based in China]]></text>
+			</staticText>
+		</band>
+		<band height="109">
+			<staticText>
+				<reportElement x="-11" y="2" width="571" height="22" uuid="3876290b-f718-4e6c-9e12-03b945f24b33"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[2007 – 2008: a government agency in the Philippines]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="25" width="550" height="75" uuid="276a0464-f31e-48ea-ba50-4b9f47ad5bf0"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[• designed, developed and unit tested internal applications (reports and modules) with sub file loading and O-specs in AS/400. 
+• presented high-level and detailed technical designs for the application
+• organized production deployment, resolved critical issues and fixed defects.
+]]></text>
+			</staticText>
+		</band>
+		<band height="115">
+			<staticText>
+				<reportElement x="-13" y="9" width="143" height="23" uuid="241d1adc-97a7-4764-9a80-a1c2a0326ac4"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Education:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-13" y="5" width="580" height="1" uuid="24af5006-3f27-4208-8f57-0c92e9bd29e1"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="30" width="550" height="80" uuid="14d71c53-8155-4c40-a6c7-396d7895484d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[BS. In Computer Science
+2003-2006
+Mapua Institute of Technology
+333 Sen., Gil Puyat Avenue, Makati City 1200, Philippines]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

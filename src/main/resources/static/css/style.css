@@ -1,0 +1,395 @@
+/* Global Section */
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+body {
+	line-height: 1;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+section {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* HOME Section */
+#home-page {
+	background-image: url("/image/a.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-color: #efefef;
+	width: 100%;
+	height: 1000px;
+}
+
+.introduction {
+	font-family: 'Handlee';
+	color: #bf4aa8;
+	font-size: 4vw;
+	font-weight: 800;
+	width: 1500px;
+	padding: 10px 5px 10px 10px;
+	letter-spacing: 0.1vw;
+}
+
+.about {
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 70%;
+	width: 60%;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	margin-left: 20px;
+	transform: translate(-80%, -40%);
+}
+
+.inner-about {
+	height: 50%;
+	width: 80%;
+	position: absolute;
+	top: 55%;
+	left: 75%;
+	transform: translate(-80%, -40%);
+}
+
+
+actor__content {
+	font-size: 7vw;
+	font-weight: 900;
+	text-align: center;
+	color: rgb(0, 96, 172);
+	-webkit-text-stroke: 1px black;
+}
+
+.actor__content--typing::after {
+	content: '|';
+	animation: blink 10ms infinite;
+}
+
+@keyframes blink {
+	from { 
+		opacity:0;
+	} 
+	to {
+		opacity: 1;
+	}
+}
+
+nav {
+	width: 100vw;
+	height: 100px;
+	background: #efefef;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: fixed;
+	z-index: 10;
+	transition: all 0.3s;
+}
+
+.logo {
+	width: 40%;
+	border-radius: 100%;
+	margin-top: 0.3vw;
+}
+
+a.nounderline:link {
+	text-decoration: none;
+}
+
+#logo {
+	padding-left: 40px;
+}
+
+#menu {
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+
+
+#logo, #menu, #menu li {
+	display: flex;
+	align-items: center;
+}
+
+#menu ul, #logo li {
+	list-style: none;
+}
+
+#menu li {
+	display: flex;
+	padding: 0.2em 0.5em 0.2em;
+	/* background-color: #d5d9e4; */
+	color: #bf4aa8;
+	font-size: 1.5vw;
+	font-weight: bolder;
+}
+
+.explore-nav-box {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 1vw;
+	color: #bf4aa8;
+	font-family: Luckiest Guy;
+	letter-spacing: 0.2vw;
+}
+
+.explore-nav-box:hover, .explore-nav-box:focus {
+	background-color: #51d0de;
+	color: white;
+}
+
+.outer-content {
+	height: 80%;
+	border: 15px solid thistle;
+	margin-top: 150px;
+	width: 95%;
+	margin-left: 20px;
+	background-image: url("/image/a.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* PROFILE Section */
+#profile {
+    height: 500px;
+    background-color: powderblue;
+}
+#profile {
+	height: 500px;
+	background-color: powderblue;
+}
+
+p {
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 7vw;
+    color: rgb(191, 74, 168);
+    font-weight: bold;
+    font-family: Handlee;
+    letter-spacing: 0.1vw;
+    margin: 10px 0px 20px;
+}
+
+/* EXPERIENCE Section */
+#experience {
+	background-color: seashell;
+}
+
+.exp-img {
+	width: 50%;
+	float: right;
+	border-radius: 10%;
+}
+
+.exp-client {
+	font-size: 1.5vw;
+	padding-bottom: 0.5vw;
+	color: blue;
+	font-family: 'Righteous';
+}
+
+.exp-role {
+	font-size: 1vw;
+	font-family: 'Handlee';
+	padding-bottom: 0.5vw;
+}
+
+.exp-location {
+	font-family: 'Handlee';
+	font-size: 1vw;
+	padding-bottom: 0.5vw;
+}
+
+.exp-duties {
+	padding: 2%;
+	font-size: 1.2vw;
+	font-family: 'Handlee';
+	padding-bottom: 0.5vw;
+	padding-top: 0.5vw;
+	padding-left: 3vw;
+}
+
+.exp-duration {
+	font-size: 1vw;
+	font-family: 'Handlee';
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+}
+
+.experience-top {
+	text-align: center;
+	font-size: 1.7vw;
+	padding: 10%;
+	height: 100px;
+	color: black;
+	font-family: 'Handlee';
+}
+
+.experience-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-container {
+	flex-wrap: nowrap;
+	padding: 30px 20px 20px 20px;
+}
+
+.box-left {
+	width: 800px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.left-rw {
+	background: red;
+}
+
+.box-right {
+	width: 800px;
+	position: relative;
+	color: black;
+}
+
+
+/* CONTACT Section */
+#contact {
+	background-color: cornsilk;
+}
+
+.contact-rw-top {
+	margin: 0 10vw;
+	width: 100%;
+	padding: 1vw 5vw 1vw 1vw;
+	/* font-family: 'Cookie' */
+	font-family: 'Handlee';
+}
+
+.contact-rw-mid {
+	margin: 0 40vw;
+	width: 100%;
+}
+
+.contact-rw-last {
+	width: 100%;
+	padding: 1vw 45vw 1vw;;
+}
+
+.contact-rw-last img {
+	width: 40%;
+}
+
+.contact-1st-rw-span {
+	font-size: 1.5vw;
+	color: black;
+	width: 100%;
+	padding: 0 5vw;
+}
+
+.contact-2nd-rw-span {
+	font-size: 1.5vw;
+	color: black;
+	width: 100%;
+	font-family: 'Handlee';
+}
+
+/* SKILLS Section */
+#skills {
+	height: 1200px;
+	background-color: plum;
+}
+
+.skills-list-header {
+	color: black;
+	font-size: 2vw;
+/* 	font-family: 'Rock Salt'; */
+	font-family: 'Handlee';
+	padding-top: 30px;
+}
+
+.skills-top {
+	margin: 0 auto;
+	text-align: center;
+	height: 10%;
+	width: 90%;
+}
+
+.skills-top p {
+	font-family: 'Handlee';
+	font-size: 1.5vw;
+	text-align: center;
+	padding-top: 7vw;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.1vw;
+}
+
+.skills-list {
+	color: black;
+	margin-left: 100px;
+	display: inline-block;
+	width: 150%;
+}
+
+.skills-list span {
+    font-size: 1.5vw;
+}
+
+.skills-rw-items {
+	font-size: 1.5vw;
+	width: 200%;
+	/* font-family: 'Shojumaru'; */
+	font-family: 'Handlee';
+}
+
+.skills-mid {
+	width: 110%;
+	margin: 0 20%;
+	padding-top: 5%;
+}
+
+.skills-bottom {
+	width: 110%;
+	margin: 0 20%;
+	padding-top: 5%;
+}
+
+.skills-rw {
+	width: 22%;
+	display: inline-block;
+}
+
+.skills-container {
+	width: 50%;
+	margin: 0 5%;
+}
+
+.line {
+	width: 1400px;
+	height: 47px;
+	border-bottom: 1px solid black;
+}
+
+.checked {
+	color: orange;
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Aileen Kill</title>
+
+
+<link rel="stylesheet" type="text/css"
+	href="http://fonts.googleapis.com/css?family=Rakkas">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Kaushan Script'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Satisfy'
+	rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+	rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Merienda'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Merienda+One'
+	rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=Pacifico'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Monoton'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Press Start 2P'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Kumar+One+Outline'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Shojumaru'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Caveat'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Righteous'
+	rel='stylesheet'>
+<link
+	href='https://fonts.googleapis.com/css?family=Fredericka+the+Great'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cookie'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Handlee'
+	rel='stylesheet'>
+
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="http://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+
+</head>
+
+<body ng-app="app" ng:controller="NavigationController"
+	data-ng-init="loadName()">
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="#home-page" ng-click="loadName()"> <img alt="Home Logo"
+					src="/image/logo.jpg" class="logo">
+				</a>
+			</div>
+			<div id="menu">
+				<ul style="top: 160px;">
+					<li><a ng-repeat="item in items" class="explore-nav-box"
+						style="text-decoration: none" ng-href={{item.link}}
+						ng-click="loadResume(item.title)">{{item.title}}</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="home-page">
+			<div class="about">
+				<div class="inner-about">
+					<div id="introName" class="introduction actor__content"></div>
+					<div id="introDesc" class="introduction actor__content"></div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section id="profile">
+		<p>
+			Hi. <br /> <br /> I am a Web Developer / Software Engineer based in
+			Woodbury Minnesota. <br /> <br /> Although my IT professional
+			experience have taken into many twists and turn for more than 10
+			years - from Web Developer to Tester, <br /> <br /> to Software
+			Engineer, to Production Support with wide range of technologies, I
+			always strive to learn something new. <br /> <br />
+		</p>
+	</section>
+
+	<section id="experience">
+		<div>
+			<div class="experience-top">
+				Over the years I worked for clients and companies as an employee <br />
+				<br /> _Here are my accomplishments so far_
+			</div>
+
+			<div class="experience-container">
+
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Accenture Logo" src="/image/accenture.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Best Buy</div>
+						<div class="exp-role">L3 Production Support Lead</div>
+						<div class="exp-location">Richfield, MN</div>
+						<div class="exp-duties">My team managed the tax calculation
+							application as well as their upgrade integration project -
+							eliminating compliance/support risk and saving extended support
+							cost by 25% of increase. I helped carry out the automation
+							initiatives using Robotic Process Automation utilizing
+							Powershell, Docker, Service Now and Hipchat, and currently lead
+							the support team especially during Holiday events.</div>
+						<div class="exp-duration">Feb 2015 - Present</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Accenture Logo" src="/image/accenture.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Best Buy</div>
+						<div class="exp-role">Front-end Development Lead</div>
+						<div class="exp-location">Richfield, MN</div>
+						<div class="exp-duties">Best Buy Deals site offers the
+							hottest deals to shop electronics in a weekly, Deal of the Day,
+							and even an epic events like Blackfriday, Cyber Monday and
+							Thanksgiving. Our goal is to make customer experience flawless
+							and smooth during the peak events in a desktop and mobile
+							platforms. This Agile team exercised my leadership in managing
+							five offsite developers and strengthened my good relationship
+							with brilliant engineers, designers, and stakeholder leaders.</div>
+						<div class="exp-duration">October 2014 - February 2015</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Accenture Logo" src="/image/accenture.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Best Buy</div>
+						<div class="exp-role">Tester</div>
+						<div class="exp-location">Richfield, MN</div>
+						<div class="exp-duties">It was my first testing role that
+							flooded me with opportunities to work on automating a "smoke
+							test" using SOAP UI Pro to migrate BestBuy.com profile data to
+							enterprise customer master (CA). This project provides a single
+							customer login for all Best Buy properties, integrates customer
+							data to provide seamless accounts, and a capability to extend a
+							third party login providers.</div>
+						<div class="exp-duration">April 2014 - September 2014</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Accenture Logo" src="/image/accenture.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">UBS Investment Banking Company</div>
+						<div class="exp-role">Senior Software Engineer</div>
+						<div class="exp-location">Taguig, Philippines</div>
+						<div class="exp-duties">This global financial services
+							company based in Zurich Switzerland taught me to surround myself
+							with people who pushed me to my limits. Alongside with the wisdom
+							from technical architecture, we laid the foundation of the ETL
+							framework to migrate the current batch program to Spring
+							framework. I'm grateful for the time I spent with this team, who
+							they gave me an opportunity to be SME of Spring batch. UBS showed
+							me what I can do, what I love to do, and what I can learn, aided
+							with a wealth of inspiring peers and other leaders.</div>
+						<div class="exp-duration">February 2013 - March 2014</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Accenture Logo" src="/image/accenture.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Best Buy</div>
+						<div class="exp-role">Software Engineer</div>
+						<div class="exp-location">Mandaluyong Philippines</div>
+						<div class="exp-duties">This project exercised my
+							communication skills by transitioning the knowledge to a team in
+							India. As a one man team, it gave me diverse of opportunity to
+							build and restructure web services from JaxWS to Axis. My tenure
+							in this project empower me to accomplished an out of scope task
+							(creating a DLL file using Visual Basic) and strengthened my
+							coding skills to designed, developed and consumed RESTful
+							services for web and mobile platform in an Agile format. I
+							continue to be inspired by this project today.</div>
+						<div class="exp-duration">January 2011 - December 2012</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Solutions Exchange Inc. Logo" src="/image/sxi.jpg"
+							class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Chinabank</div>
+						<div class="exp-role">Technical Consultant</div>
+						<div class="exp-location">Makati Philippines</div>
+						<div class="exp-duties">SXI 6 months training opened my eyes
+							to exciting new technologies and a rite of passage into software
+							engineering professionalism. During these couple of months under
+							Chinabank, a banking company based in China, I queried SQL data
+							to create reporting modules and create front/back office modules for remittance online system,
+							published initiatives to guide user, participated in the design
+							system process, and handles deployments.</div>
+						<div class="exp-duration">January 2009 - December 2010</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience-container">
+				<div class="box-container">
+					<div class="box-left left-rw">
+						<img alt="Radix Logo" src="/image/radix.jpg" class="exp-img" />
+					</div>
+				</div>
+				<div class="box-container">
+					<div class="box-right right-rw">
+						<div class="exp-client">Abbott</div>
+						<div class="exp-role">Technical Consultant</div>
+						<div class="exp-location">Taguig Philippines</div>
+						<div class="exp-duties">This government agency in the
+							Philippines gave me a glimpse into the challenges and rewards of
+							a startup employee's life. Abbott flooded me with diverse of
+							opportunity to designed, developed, and deployed internal
+							applications with sub file loading and O-specs in IBM AS/400.</div>
+						<div class="exp-duration">January 2007 - July 2008</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="skills">
+		<div>
+			<div class="skills-top">
+				<p>No thief, however skillful, can rob one of knowledge, and
+					that is why knowledge is the best and safest treasure to acquire. -
+					L. Frank Baum, The Lost Princess of Oz</p>
+			</div>
+			<div class="skills-container">
+				<div class="skills-mid">
+					<div class="line"></div>
+					<div class="skills-list-header">Skills</div>
+					<div class="skills-list">
+
+						<div class="skills-rw">
+							<div class="skills-rw-items">Java</div>
+							<div class="skills-rw-items">Javascript</div>
+							<div class="skills-rw-items">Struts</div>
+							<div class="skills-rw-items">CSS (3)</div>
+							<div class="skills-rw-items">HTML (5)</div>
+							<div class="skills-rw-items">JSON</div>
+							<div class="skills-rw-items">JQuery</div>
+							<div class="skills-rw-items">AngularJS</div>
+							<div class="skills-rw-items">ReactJS</div>
+							<div class="skills-rw-items">Apache Wicket</div>
+							<div class="skills-rw-items">JSF</div>
+							<div class="skills-rw-items">JSP</div>
+						</div>
+						<div class="skills-rw">
+
+							<div>
+								<!-- Java -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Javascript -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Struts -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- CSS -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- HTNL -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JSON -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JQuery -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- AngularJS -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- ReactJS -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Apache Wicket -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JSF -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JSP -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="skills-rw">
+							<div class="skills-rw-items">Maven</div>
+							<div class="skills-rw-items">Spring</div>
+							<div class="skills-rw-items">Hibernate</div>
+							<div class="skills-rw-items">Visual Basic</div>
+							<div class="skills-rw-items">IBM RPG AS400</div>
+							<div class="skills-rw-items">C++</div>
+							<div class="skills-rw-items">Powershell</div>
+							<div class="skills-rw-items">MySQL</div>
+							<div class="skills-rw-items">MS SQL Server</div>
+							<div class="skills-rw-items">CouchDB</div>
+							<div class="skills-rw-items">MongoDB</div>
+							<div class="skills-rw-items">Docker</div>
+						</div>
+						<div class="skills-rw">
+							<div>
+								<!-- Maven -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Spring -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Hibernate -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Visual Basic -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- IBM RPG AS400 -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- C++ -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Powershell -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- mySQL -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- MS SQL Server -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- CouchDB -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- MongoDb -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Docker -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="skills-bottom">
+					<div class="line"></div>
+					<div class="skills-list-header">Tools</div>
+					<div class="skills-list">
+						<div class="skills-rw">
+							<div class="skills-rw-items">TestNG</div>
+							<div class="skills-rw-items">JUnit</div>
+							<div class="skills-rw-items">JMeter</div>
+							<div class="skills-rw-items">Selenium</div>
+							<div class="skills-rw-items">JBehave</div>
+							<div class="skills-rw-items">Soap UI</div>
+							<div class="skills-rw-items">Service Now</div>
+							<div class="skills-rw-items">Tomcat</div>
+							<div class="skills-rw-items">Websphere</div>
+							<div class="skills-rw-items">Documentum</div>
+							<div class="skills-rw-items">JBoss</div>
+							<div class="skills-rw-items">Glassfish</div>
+							<div class="skills-rw-items">Jasper Report</div>
+						</div>
+
+						<div class="skills-rw">
+							<div>
+								<!-- TestNG -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JUnit -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JMeter -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star"></span> <span class="fa fa-star"></span> <span
+									class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Selenium -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JBehave -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Soap UI -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Service Now -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Tomcat -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Websphere -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Documentum -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- JBoss -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Glassfish -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Jasper Report -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="skills-rw">
+							<div class="skills-rw-items">Jenkins</div>
+							<div class="skills-rw-items">Hudson</div>
+							<div class="skills-rw-items">Docker</div>
+							<div class="skills-rw-items">Subclipse SVN</div>
+							<div class="skills-rw-items">Mercurial</div>
+							<div class="skills-rw-items">ClearCase</div>
+							<div class="skills-rw-items">ClearQuest</div>
+							<div class="skills-rw-items">Version One</div>
+							<div class="skills-rw-items">Rally</div>
+							<div class="skills-rw-items">Jira</div>
+							<div class="skills-rw-items">Splunk</div>
+							<div class="skills-rw-items">HP BSM</div>
+							<div class="skills-rw-items">HP Perf Manager</div>
+						</div>
+						<div class="skills-rw">
+							<div>
+								<!-- Jenkins -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Hudson -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Docker -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Subclipse SVN -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Mercurial -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- ClearCase -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- ClearQuest -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Version One -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Rally -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Jira -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- Splunk -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- HP BSM -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<div>
+								<!-- HP Performance Manager -->
+								<span class="fa fa-star checked"></span> <span
+									class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end div of bottom -->
+			</div>
+		</div>
+		<!-- end div of container -->
+	</section>
+
+	<section id="contact">
+		<div>
+			<div class="contact-rw-top">
+				<span class="contact-1st-rw-span"> I'm a Filipino, born in
+					the Philippines, wander from Southeast Asia to Midwest, from a
+					7,641 islands to Land of 10,000 Lakes.</span>
+			</div>
+
+			<div class="contact-rw-mid">
+				<span class="contact-2nd-rw-span"> Let's talk. <a
+					href="https://www.linkedin.com/in/aileeninocente">LinkedIn</a> or <a
+					href="https://www.facebook.com/aileen.inocente"> Facebook </a>
+					messages work best.
+				</span>
+			</div>
+
+			<div class="contact-rw-last">
+				<a href="https://www.facebook.com/aileen.inocente"><img
+					alt="Facebook" src="/image/facebook.jpg"></a> <a
+					href="https://www.linkedin.com/in/aileeninocente"><img
+					alt="LinkedIn" src="/image/linkedin.jpg"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

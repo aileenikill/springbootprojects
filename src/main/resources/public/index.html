@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.keyboard.js"></script>
+<script type="text/javascript" src="/js/greet.js"></script>
+<!-- <script>
+	function init() {
+		/* alert("in public");
+		var stage = new createjs.Stage("demoCanvas");
+		var circle = new createjs.Shape();
+		circle.graphics.beginFill("red").drawCircle(0, 0, 50);
+		circle.x = 100;
+		circle.y = 100;
+		stage.addChild(circle);
+		stage.addChild(new createjs.Shape()).set({x:100,y:100}).graphics.f("red").dc(0,0,50);
+		stage.update(); */
+		
+		stage = new createjs.Stage("demoCanvas");
+	    spriteSheet = new createjs.SpriteSheet({
+	        framerate: 5,
+	        "images": ["https://preview.ibb.co/eLKC7T/man2_rt1.gif","https://preview.ibb.co/ccR3E8/man2_rt2.gif"],
+	        "frames": {"regX": 82, "height": 32, "count": 2, "regY": 0, "width": 32},
+	        "animations": {
+	            "run": [0,1,"run",1],
+	            "stop": [0,"stop",0]
+	        }
+	    });
+	    grant = new createjs.Sprite(spriteSheet, "run");
+	    begin = new createjs.Sprite(spriteSheet,"stop");
+	    begin.x = 150;
+	    begin.y = 50;
+	    grant.x = 150;
+	    grant.y = 50;
+	    
+	    stage.addChild(begin);
+	    createjs.Ticker.addEventListener("tick", stage);
+
+	}
+
+	function reset(){
+	    stage.removeAllChildren();
+	    stage.update();
+	}
+
+	document.addEventListener('keydown' ,(event) =>{
+	    const keyName = event.key;
+	    if (keyName === 'ArrowRight'){
+	        if(begin != null){
+	            stage.removeChild(begin);
+	            begin = null;
+	        }
+	        if(grant.x > stage.canvas.width){
+	            grant.x = 150;
+	        }
+	        stage.addChild(grant);
+	        createjs.Ticker.addEventListener("tick", stage);
+	        grant.x = grant.x+10;
+	 
+	    }
+	})
+</script> -->
+</head>
+
+
+<body>
+	<!-- <canvas id="demoCanvas" width="500" height="300">
+    </canvas> -->
+
+	<div>
+		<button id="Start" onclick=init();>Start</button>
+		<button id="Reset" onclick=reset();>Reset</button>
+	</div>
+	<div>
+		<canvas id="demoCanvas" width="1000" height="200"></canvas>
+	</div>
+</body>
+
+
+</html>
