@@ -30,7 +30,7 @@ section {
 
 /* HOME Section */
 #home-page {
-	background-image: url("/image/a.jpg");
+	background-image: url("/image/aileen.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -164,7 +164,7 @@ a.nounderline:link {
 	margin-top: 150px;
 	width: 95%;
 	margin-left: 20px;
-	background-image: url("/image/a.jpg");
+	background-image: url("/image/aileen.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -296,7 +296,7 @@ p {
 }
 
 .contact-rw-last img {
-	width: 40%;
+	width: 30%;
 }
 
 .contact-1st-rw-span {

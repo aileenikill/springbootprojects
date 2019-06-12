@@ -21,19 +21,26 @@ public class IndexController {
 
 	private static String CONST_SRC_FILENAME = "./src/main/resources/static/reports/resume.jrxml";
 	
+	/**
+	 * This method is the main page
+	 * @return HTML page
+	 */
 	@RequestMapping("/")
 	public String getIndex() {
 		return "index.html";
 	}
 	
+	/**
+	 * This method is to generate the resume in a PDF format.
+	 * @param request - request and response
+	 * @param response
+	 * @throws IOException
+	 */
 	@RequestMapping(value="/resume")
 	public void generatePDFJasperChart(HttpServletRequest request,
 				HttpServletResponse response) throws IOException {
-	 
-		
-		try {
+	 	try {
 			String sourceFileName = CONST_SRC_FILENAME;
-			System.out.println(sourceFileName);
 			JasperReport report = JasperCompileManager.compileReport(sourceFileName);
 			JasperPrint jasperPrint = JasperFillManager.fillReport(report,
 					null, new JREmptyDataSource());
