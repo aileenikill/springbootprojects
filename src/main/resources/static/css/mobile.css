@@ -1,12 +1,9 @@
-/* Global Section */
 
 body {
 	overflow-x: hidden;
 	overflow-y: scroll;
-}
-
-body {
 	line-height: 1;
+	width: 150%;
 }
 
 * {
@@ -15,18 +12,11 @@ body {
 	padding: 0;
 }
 
-header {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-}
-
 section {
-	width: 100vw;
+	width: 170vw;
 	display: flex;
 	justify-content: center;
 }
-
 
 /* HOME Section */
 #home-page {
@@ -35,17 +25,17 @@ section {
 	background-size: cover;
 	position: relative;
 	background-color: #efefef;
-	width: 100%;
-	height: 1000px;
+	height: 950px;
+	width: 170vw;
 }
 
 .introduction {
 	font-family: 'Handlee';
 	color: #bf4aa8;
-	font-size: 4vw;
+	font-size: 7vw;
 	font-weight: 800;
 	width: 1500px;
-	padding: 10px 5px 10px 10px;
+	padding: 10px 5px 100px 10px;
 	letter-spacing: 0.1vw;
 }
 
@@ -95,7 +85,7 @@ actor__content {
 }
 
 nav {
-	width: 100vw;
+	/* width: 155vw; */
 	height: 100px;
 	background: lightcoral;
 	display: grid;
@@ -139,7 +129,7 @@ a.nounderline:link {
 	padding: 0.2em 0.5em 0.2em;
 	/* background-color: #d5d9e4; */
 	color: #bf4aa8;
-	font-size: 1.3vw;
+	font-size: 3vw;
 	font-weight: bolder;
 }
 
@@ -169,14 +159,17 @@ a.nounderline:link {
 	background-size: cover;
 }
 
+
 /* PROFILE Section */
 #profile {
-	height: 500px;
+	height: 800px;
+/* 	width: 1500px; */	
 	background-color: powderblue;
+	padding-top: 100px;
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 5vw;
     text-align: center;
     padding-top: 7vw;
     color: rgb(191, 74, 168);
@@ -187,96 +180,88 @@ p {
     width: 70%;
 }
 
+
 /* EXPERIENCE Section */
 #experience {
 	background-color: seashell;
 }
 
 .exp-img {
-	width: 50%;
-	float: right;
 	border-radius: 10%;
-	height: 80%;
+    height: 350px;
+    margin-left: 150px;
+   /*  margin-top: 200px; */
 }
 
 .exp-client {
-	font-size: 1.5vw;
-	padding-bottom: 0.5vw;
-	color: blue;
-	font-family: 'Righteous';
+	font-size: 3vw;
+    padding-bottom: 0.5vw;
+    color: blue;
+    font-family: 'Righteous';
 }
 
 .exp-role {
-	font-size: 1vw;
-	font-family: 'Handlee';
-	padding-bottom: 0.5vw;
+	font-size: 2.5vw;
+    font-family: 'Handlee';
+    padding-bottom: 0.5vw;
 }
 
 .exp-location {
 	font-family: 'Handlee';
-	font-size: 1vw;
-	padding-bottom: 0.5vw;
+    font-size: 2.5vw;
+    padding-bottom: 0.5vw;
 }
 
 .exp-duties {
 	padding: 2%;
-	font-size: 1.2vw;
-	font-family: 'Handlee';
-	padding-bottom: 0.5vw;
-	padding-top: 0.5vw;
-	padding-left: 3vw;
+    font-size: 3vw;
+    font-family: 'Handlee';
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+    width: 80%;
 }
 
 .exp-duration {
-	font-size: 1vw;
-	font-family: 'Handlee';
-	padding-top: 0.5vw;
-	padding-bottom: 0.5vw;
+	font-size: 3vw;
+    font-family: 'Handlee';
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 .experience-top {
 	text-align: center;
-	font-size: 1.7vw;
-	padding: 8%;
+	font-size: 4vw;
+	padding: 10%;
 	height: 100px;
 	color: black;
 	font-family: 'Handlee';
 }
 
-.experience-middle {
-	margin: 0 auto;
-    width: 100%;
-    padding-top: 20px;	
-}
-
 .experience-container {
 	display: flex;
 	justify-content: space-between;
-	height: 350px;
+	padding-bottom: 50px;
+	padding-top: 100px;
 }
 
 .box-container-left {
-	width: 50%;
-	padding-right: 50px;
+	width: 20%;
 }
 
 .box-container-right {
-	width: 50%;
+	 padding-left: 200px;
+}
+
+.box-right {
+	width: 90%;
 }
 
 
 /* SKILLS Section */
 #skills {
-	height: 1200px;
+	height: 1700px;
 	background-color: plum;
-}
-
-.skills-list-header {
-	color: black;
-	font-size: 2vw;
-/* 	font-family: 'Rock Salt'; */
-	font-family: 'Handlee';
-	padding-top: 30px;
 }
 
 .skills-top {
@@ -284,24 +269,26 @@ p {
 	text-align: center;
 	height: 10%;
 	width: 90%;
+	padding: 10%;
 }
-
+    
 .skills-top p {
 	margin: 0 auto;
 	font-family: 'Handlee';
-	font-size: 1.5vw;
+	font-size: 4vw;
 	text-align: center;
-	padding-top: 7vw;
+	padding-top: 1vw;
 	color: black;
 	font-weight: bold;
 	letter-spacing: 0.1vw;
 }
 
+
 .skills-list {
 	color: black;
 	margin-left: 100px;
 	display: inline-block;
-	width: 150%;
+	/* width: 150%; */
 }
 
 .skills-list span {
@@ -310,31 +297,39 @@ p {
 
 .skills-rw-items {
 	font-size: 1.5vw;
-	width: 200%;
-	/* font-family: 'Shojumaru'; */
+/* 	width: 200%; */
 	font-family: 'Handlee';
 }
-
-.skills-mid {
-	width: 110%;
-	margin: 0 20%;
-	padding-top: 5%;
-}
-
-.skills-bottom {
-	width: 110%;
-	margin: 0 20%;
-	padding-top: 5%;
+.skills-list-header {
+	color: black;
+	font-size: 5vw;
+	font-family: 'Handlee';
+	padding-top: 30px;
+	padding-left: 2%;
+	font-weight: bold;
 }
 
 .skills-rw {
-	width: 22%;
+	/* width: 22%; */
 	display: inline-block;
+	margin-right: 100px;
 }
 
-.skills-container {
-	width: 50%;
-	margin: 0 5%;
+.skills-mid {
+	/* width: 110%;
+	margin: 0 20%; */
+	/* padding-top: 5%; */
+}
+
+.skills-list span {
+    font-size: 4vw;
+}
+
+.skills-rw-items {
+	font-size: 4vw;
+	width: 200%;
+	/* font-family: 'Shojumaru'; */
+	font-family: 'Handlee';
 }
 
 .line {
@@ -351,18 +346,19 @@ p {
 /* CONTACT Section */
 #contact {
 	background-color: cornsilk;
+	height: 700px;
 }
 
 .contact-rw-top {
 	margin: 0 10vw;
-	width: 100%;
-	padding: 1vw 5vw 1vw 1vw;
+	/* width: 100%; */
+	padding: 5vw 5vw 5vw 5vw;
 	/* font-family: 'Cookie' */
 	font-family: 'Handlee';
 }
 
 .contact-rw-mid {
-	margin: 0 40vw;
+	margin: 5vw 40vw;
 	width: 100%;
 }
 
@@ -372,18 +368,18 @@ p {
 }
 
 .contact-rw-last img {
-	width: 30%;
+	width: 20%;
 }
 
 .contact-1st-rw-span {
-	font-size: 1.5vw;
+	font-size: 5vw;
 	color: black;
 	width: 100%;
 	padding: 0 5vw;
 }
 
 .contact-2nd-rw-span {
-	font-size: 1.5vw;
+	font-size: 5vw;
 	color: black;
 	width: 100%;
 	font-family: 'Handlee';

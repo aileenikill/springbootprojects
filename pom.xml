@@ -11,7 +11,7 @@
 	<groupId>com.springboot.projects</groupId>
 	<artifactId>springbootprojects</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootExercies</name>
+	<name>SpringBootExercises</name>
 	<description>Resume project for Spring Boot</description>
 
 	<properties>

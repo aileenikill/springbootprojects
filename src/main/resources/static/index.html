@@ -1,63 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app" ng:controller="NavigationController"
+	data-ng-init="loadName()">
 
 <head>
 <title>Aileen Kill</title>
-
-
-<link rel="stylesheet" type="text/css"
-	href="http://fonts.googleapis.com/css?family=Rakkas">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link href='https://fonts.googleapis.com/css?family=Kaushan Script'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Satisfy'
-	rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
-	rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
-	rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Merienda'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Merienda+One'
-	rel='stylesheet'>
-
-<link href='https://fonts.googleapis.com/css?family=Pacifico'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Monoton'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Press Start 2P'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Rock+Salt'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Kumar+One+Outline'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Shojumaru'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Caveat'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Indie+Flower'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Righteous'
-	rel='stylesheet'>
-<link
-	href='https://fonts.googleapis.com/css?family=Fredericka+the+Great'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Cookie'
-	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Handlee'
-	rel='stylesheet'>
-
-
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -65,10 +11,18 @@
 	src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="http://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
 
+<link rel="stylesheet" href={{myVar}}>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Handlee'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy'
+	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Righteous'
+	rel='stylesheet'>
 </head>
 
-<body ng-app="app" ng:controller="NavigationController"
-	data-ng-init="loadName()">
+<body>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
@@ -118,16 +72,13 @@
 				<br /> _Here are my accomplishments so far_
 			</div>
 
-			<div class="experience-container">
-
-				<div class="box-container">
-					<div class="box-left left-rw">
+			<div class="experience-middle">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Accenture Logo" src="/image/accenture.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Best Buy</div>
 						<div class="exp-role">L3 Production Support Lead</div>
 						<div class="exp-location">Richfield, MN</div>
@@ -141,17 +92,13 @@
 						<div class="exp-duration">Feb 2015 - Present</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Accenture Logo" src="/image/accenture.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Best Buy</div>
 						<div class="exp-role">Front-end Development Lead</div>
 						<div class="exp-location">Richfield, MN</div>
@@ -166,17 +113,13 @@
 						<div class="exp-duration">October 2014 - February 2015</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Accenture Logo" src="/image/accenture.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Best Buy</div>
 						<div class="exp-role">Tester</div>
 						<div class="exp-location">Richfield, MN</div>
@@ -190,17 +133,13 @@
 						<div class="exp-duration">April 2014 - September 2014</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Accenture Logo" src="/image/accenture.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">UBS Investment Banking Company</div>
 						<div class="exp-role">Senior Software Engineer</div>
 						<div class="exp-location">Taguig, Philippines</div>
@@ -216,17 +155,13 @@
 						<div class="exp-duration">February 2013 - March 2014</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Accenture Logo" src="/image/accenture.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Best Buy</div>
 						<div class="exp-role">Software Engineer</div>
 						<div class="exp-location">Mandaluyong Philippines</div>
@@ -242,17 +177,13 @@
 						<div class="exp-duration">January 2011 - December 2012</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Solutions Exchange Inc. Logo" src="/image/sxi.jpg"
 							class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Chinabank</div>
 						<div class="exp-role">Technical Consultant</div>
 						<div class="exp-location">Makati Philippines</div>
@@ -260,22 +191,19 @@
 							to exciting new technologies and a rite of passage into software
 							engineering professionalism. During these couple of months under
 							Chinabank, a banking company based in China, I queried SQL data
-							to create reporting modules and create front/back office modules for remittance online system,
-							published initiatives to guide user, participated in the design
-							system process, and handles deployments.</div>
+							to create reporting modules and create front/back office modules
+							for remittance online system, published initiatives to guide
+							user, participated in the design system process, and handles
+							deployments.</div>
 						<div class="exp-duration">January 2009 - December 2010</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="experience-container">
-				<div class="box-container">
-					<div class="box-left left-rw">
+				<div class="experience-container">
+					<div class="box-container-left">
 						<img alt="Radix Logo" src="/image/radix.jpg" class="exp-img" />
 					</div>
-				</div>
-				<div class="box-container">
-					<div class="box-right right-rw">
+					<div class="box-container-right">
 						<div class="exp-client">Abbott</div>
 						<div class="exp-role">Technical Consultant</div>
 						<div class="exp-location">Taguig Philippines</div>
@@ -288,7 +216,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
@@ -419,7 +346,7 @@
 						</div>
 						<div class="skills-rw">
 							<div>
-								<!-- Maven -->
+								<!-- Maven  -->
 								<span class="fa fa-star checked"></span> <span
 									class="fa fa-star checked"></span> <span
 									class="fa fa-star checked"></span> <span
@@ -740,14 +667,12 @@
 			</div>
 
 			<div class="contact-rw-last">
-				<a href="https://www.facebook.com/aileen.inocente">
-					<img alt="Facebook" src="/image/facebook.jpg">
-				</a> 
-				<a href="https://www.linkedin.com/in/aileeninocente">
-					<img alt="LinkedIn" src="/image/linkedin.jpg">
-				</a>
-				<a href="https://github.com/aileenikill">
-					<img alt="Github" src="/image/github.png">
+				<a href="https://www.facebook.com/aileen.inocente"> <img
+					alt="Facebook" src="/image/facebook.jpg">
+				</a> <a href="https://www.linkedin.com/in/aileeninocente"> <img
+					alt="LinkedIn" src="/image/linkedin.jpg">
+				</a> <a href="https://github.com/aileenikill"> <img alt="Github"
+					src="/image/github.png">
 				</a>
 			</div>
 		</div>

@@ -14,6 +14,18 @@
 						};
 
 						$scope.loadName = function() {
+							
+							//determine browser and inject the css file depending if desktop or mobile version
+							var userAgent = navigator.userAgent.toLowerCase();
+							
+							if(userAgent.indexOf("iphone") != -1) {
+								$scope.myVar = "/css/mobile.css";
+							} else if (userAgent.match(/Android/i)) {
+								$scope.myVar = "/css/mobile.css";
+							} else {
+								$scope.myVar = "/css/style.css";
+							}
+							
 							var theater = theaterJS()
 
 							theater.on(
@@ -48,7 +60,7 @@
 						}, {
 							title : 'Experience',
 							link : '#experience',
-							click : ''
+							click : 'loadResume()'
 						}, {
 							title : 'Skills',
 							link : '#skills',
@@ -69,6 +81,9 @@
 								var strWindowFeatures = "menubar=no,location=no,width=800,height=500";
 								window.open(url, "#resume",
 										"location=0,height=500,width=800");
+							} else if(value == 'Experience') {
+								$scope.classBoxContainer = true;
+							    $scope.classBoxContainer = true;
 							}
 						}
 					});
